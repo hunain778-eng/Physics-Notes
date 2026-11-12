@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Physics Notes – IBA Public School, Sukkur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--bg:#070a1a;--card:#0d1330;--ink:#e9f1ff;--mut:#8fa0d0;--bd:#1f2f7a;--neon:#00f0ff;--neon2:#ff2bd6;--bad:#ff4d6d}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(circle at 50% -10%,#1a1450 0,transparent 55%),linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px) 0 0/32px 32px,var(--bg);min-height:100vh}
+header{padding:22px 14px 16px;text-align:center;border-bottom:1px solid var(--neon);box-shadow:0 0 22px rgba(0,240,255,.55);background:rgba(7,10,26,.7)}
+.top{display:flex;align-items:center;justify-content:center;gap:14px;max-width:860px;margin:0 auto}
+.slogo{flex:none;width:64px;height:64px;filter:drop-shadow(0 0 6px var(--neon2))}.slogo img,.slogo svg{width:64px;height:64px;object-fit:contain}
+.atom{flex:none;width:68px;height:68px;filter:drop-shadow(0 0 5px var(--neon))}
+.spin{transform-origin:0 0;animation:spin 14s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes flick{0%,92%,100%{opacity:1}94%{opacity:.82}96%{opacity:1}98%{opacity:.88}}
+h1{margin:0 0 4px;font-size:1.7rem;letter-spacing:.06em;color:#fff;text-shadow:0 0 5px #fff,0 0 12px var(--neon),0 0 28px var(--neon),0 0 46px var(--neon2);animation:flick 5s infinite}
+header p{margin:0;color:var(--neon);text-shadow:0 0 8px var(--neon);font-size:.9rem}
+.eq{margin-top:10px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;color:var(--neon2);text-shadow:0 0 8px var(--neon2)}
+main{max-width:860px;margin:0 auto;padding:18px}
+.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.tab{flex:1;min-width:110px;padding:10px;border:1px solid var(--bd);background:var(--card);color:var(--ink);border-radius:10px;font-size:1rem;cursor:pointer}
+.tab.on{background:rgba(0,240,255,.12);color:var(--neon);border-color:var(--neon);box-shadow:0 0 12px var(--neon),inset 0 0 10px rgba(0,240,255,.3)}
+input{width:100%;padding:10px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--ink);font-size:1rem}
+input:focus{outline:none;border-color:var(--neon);box-shadow:0 0 10px var(--neon)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0;box-shadow:0 0 10px rgba(0,240,255,.15);display:flex;gap:12px;align-items:center;transition:.2s}
+.card:hover{border-color:var(--neon);box-shadow:0 0 16px rgba(0,240,255,.55)}
+.ico{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-weight:700;font-size:.75rem;color:#fff}
+.pdf{background:#ff2b4d;box-shadow:0 0 10px #ff2b4d}.ppt{background:#ff8a00;box-shadow:0 0 10px #ff8a00}
+.meta{flex:1;min-width:0}.meta b{display:block;overflow-wrap:anywhere}.meta small{color:var(--mut)}
+.chip{display:inline-block;background:#101c4a;color:var(--neon);border-radius:99px;padding:1px 9px;font-size:.75rem;margin-right:6px}
+.acts{display:flex;flex-direction:column;gap:6px}
+a.btn{color:var(--neon);border:1px solid var(--neon);box-shadow:0 0 8px var(--neon),inset 0 0 8px rgba(0,240,255,.25);text-shadow:0 0 6px var(--neon);border-radius:8px;padding:9px 14px;text-decoration:none;text-align:center}
+.empty{text-align:center;color:var(--mut);padding:28px}
+@media (prefers-reduced-motion:reduce){.spin,h1{animation:none}}
+</style></head>
+<body>
+<header><div class="top">
+<div class="slogo"><img src="logo.jpg" alt="School logo" onerror="this.style.display='none';document.getElementById('fb').style.display='block'">
+<svg id="fb" style="display:none" viewBox="0 0 64 64"><path d="M32 4 56 13v18c0 15-10 25-24 29C18 56 8 46 8 31V13z" fill="#0d1330" stroke="#ff2bd6" stroke-width="2.5"/><text x="32" y="38" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="17" fill="#fff">IBA</text></svg></div>
+<div><h1>PHYSICS NOTES</h1><p>Class IX &amp; XI · IBA Public School, Sukkur</p></div>
+<svg class="atom" viewBox="-50 -50 100 100"><g class="spin"><g fill="none" stroke="#00f0ff" stroke-width="1.6"><ellipse rx="44" ry="16"/><ellipse rx="44" ry="16" transform="rotate(60)"/><ellipse rx="44" ry="16" transform="rotate(120)"/></g><circle cx="44" r="3.5" fill="#fff"/><circle cx="44" r="3.5" fill="#fff" transform="rotate(60)"/><circle cx="44" r="3.5" fill="#fff" transform="rotate(120)"/></g><circle r="6" fill="#ff2bd6"/></svg>
+</div><div class="eq">E = mc² · F = ma · V = IR · v = fλ · p = mv</div></header>
+<main>
+<div class="tabs" id="tabs"><button class="tab on" data-c="All">All</button><button class="tab" data-c="Class IX">Class IX</button><button class="tab" data-c="Class XI">Class XI</button></div>
+<input id="q" placeholder="🔍 Search notes…" style="margin-bottom:6px">
+<div id="list"><div class="empty">Loading…</div></div>
+</main>
+<script>
+(function(){
+  var notes=[],cur="All",$=function(i){return document.getElementById(i)};
+  function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+  function href(p){return p.split("/").map(encodeURIComponent).join("/")}
+  function render(){
+    var q=$("q").value.toLowerCase(),l=$("list");
+    var f=notes.filter(function(n){return (cur==="All"||n.cls===cur)&&n.name.toLowerCase().indexOf(q)>-1});
+    if(!f.length){l.innerHTML='<div class="empty">No notes yet.</div>';return}
+    l.innerHTML=f.map(function(n){
+      var p=n.type==="pdf",t=n.name.replace(/\.[^.]+$/,"").replace(/_+/g," ");
+      return '<div class="card"><div class="ico '+(p?"pdf":"ppt")+'">'+(p?"PDF":"PPT")+'</div><div class="meta"><b>'+esc(t)+'</b><span class="chip">'+esc(n.cls)+'</span><small>'+Math.round((n.size||0)/1024)+' KB</small></div>'+
+      '<div class="acts">'+(p?'<a class="btn" href="'+href(n.path)+'" target="_blank" rel="noopener">Open</a>':'')+'<a class="btn" href="'+href(n.path)+'" download="'+esc(n.name)+'">Download</a></div></div>';
+    }).join("");
+  }
+  $("tabs").onclick=function(e){var c=e.target.getAttribute("data-c");if(!c)return;cur=c;[].forEach.call(document.querySelectorAll(".tab"),function(t){t.classList.toggle("on",t===e.target)});render()};
+  $("q").oninput=render;
+  async function viaApi(){
+    var h=location.hostname,p=location.pathname.split("/").filter(Boolean);
+    if(h.slice(-10)!==".github.io")throw 0;
+    var u=h.split(".")[0],r=p[0]||h,out=[];
+    for(var x of [["ClassIX","Class IX"],["ClassXI","Class XI"]]){
+      var res=await fetch("https://api.github.com/repos/"+u+"/"+r+"/contents/"+x[0]);
+      if(!res.ok)continue;
+      (await res.json()).forEach(function(f){var e=f.name.split(".").pop().toLowerCase();
+        if(["pdf","ppt","pptx"].indexOf(e)>-1)out.push({cls:x[1],name:f.name,path:f.path,size:f.size,type:e==="pdf"?"pdf":"ppt"})});
+    }
+    return out;
+  }
+  (async function(){
+    try{var r=await fetch("notes.json?t="+Date.now());if(!r.ok)throw 0;notes=(await r.json()).notes||[]}
+    catch(e){try{notes=await viaApi()}catch(x){}}
+    render();
+  })();
+})();
+</script>
+</body></html>

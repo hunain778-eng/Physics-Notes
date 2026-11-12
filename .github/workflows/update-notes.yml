@@ -1,0 +1,32 @@
+name: Update notes list
+on:
+  push:
+    paths-ignore: ["notes.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build notes.json
+        run: |
+          python3 - <<'PY'
+          import os, json
+          notes = []
+          for folder, cls in (("ClassIX", "Class IX"), ("ClassXI", "Class XI")):
+              if not os.path.isdir(folder): continue
+              for name in sorted(os.listdir(folder)):
+                  ext = name.lower().rsplit(".", 1)[-1]
+                  if ext in ("pdf", "ppt", "pptx"):
+                      p = folder + "/" + name
+                      notes.append({"cls": cls, "name": name, "path": p, "size": os.path.getsize(p), "type": "pdf" if ext == "pdf" else "ppt"})
+          json.dump({"notes": notes}, open("notes.json", "w"), indent=1)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "notes-bot"
+          git config user.email "notes-bot@users.noreply.github.com"
+          git add notes.json
+          git diff --cached --quiet || (git commit -m "Update notes list" && git push)
